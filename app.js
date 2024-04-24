@@ -204,8 +204,21 @@ Exercise 12: FizzBuzz with arrays
 
 Complete Exercise 12 in the space below:
 */
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+const fizz = [];
+const buzz = [];
+const fizzbuzz = [];
 
+for (let num of nums) {
+    if (num % 3 === 0 && num % 5 === 0) {
+        fizzbuzz.push(num);
+    } else if (num % 3 === 0) {
+        fizz.push(num);
+    } else if (num % 5 === 0) {
+        buzz.push(num);
+    }
+}
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
